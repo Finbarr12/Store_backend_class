@@ -1,6 +1,6 @@
 import cloudinary.uploader
-from app.model.storeModel import Store,Item
-from _init_ import db
+from myapp.model.storeModel import Store,Item
+from app import db
 from flask import Blueprint,request,jsonify
 import cloudinary
 

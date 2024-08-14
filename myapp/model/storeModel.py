@@ -1,4 +1,4 @@
-from  _init_ import db
+from app import db
 
 
 class Store(db.Model):
