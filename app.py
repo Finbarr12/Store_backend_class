@@ -20,10 +20,10 @@ db = SQLAlchemy(app)
 migrate = Migrate(app,db)
 
 with app.app_context():
-    from app.model.storeModel import Store,Item
+    from myapp.model.storeModel import Store,Item
     db.create_all()
 
 
 
-from app.views.storeRouter import store_bp
+from myapp.model.storeModel import store_bp
 app.register_blueprint(store_bp)
